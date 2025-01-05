@@ -1,1 +1,1 @@
-export const baseUrl = "https://nexus-backend-2-16jh.onrender.com/"
+export const baseUrl = "https://nexus-backend-2-16jh.onrender.com"
