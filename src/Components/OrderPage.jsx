@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getGamesDetails, paymentMethod, placeOrder } from '../Services/allAPI'
 import { useParams } from 'react-router-dom'
-import './Orderpage.css'
+import './OrderPage.css'
+
 const OrderPage = () => {
     const { id } = useParams()
     // console.log(id)
