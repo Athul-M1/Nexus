@@ -1,0 +1,76 @@
+/* Base styles for the sidebar */
+.sidebar {
+  width: 250px; /* Fixed width for larger screens */
+  background-color: #f8f9fa; 
+  padding: 20px;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  transition: transform 0.3s ease; /* Smooth transition for opening/closing */
+  transform: translateX(0); /* Show by default on PC */
+}
+.menu-toggle{
+  display: none;
+}
+/* Hide the sidebar off-screen by default for mobile */
+.sidebar.closed {
+  transform: translateX(-100%); /* Hide off-screen */
+}
+
+/* Sidebar title */
+.sidebar-title {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* Links in the sidebar */
+.sidebar-links {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.sidebar-links li {
+  margin: 10px 0; 
+}
+
+.sidebar-links button {
+  text-decoration: none;
+  color: #333; /* Change to dark color for better visibility */
+  background: none; /* No background for buttons */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.sidebar-links button:hover {
+  color: rgb(255, 253, 253); /* Change color on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+  /* Hide the sidebar off-screen by default */
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+
+  /* Show the sidebar when open */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Styles for the menu toggle button */
+  .menu-toggle {
+    display: block; /* Show toggle button */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px;
+    background-color: #333; /* Background color for toggle */
+    color: #f8f9fa; /* Text color for toggle */
+    border: none; /* Remove border */
+    position: fixed; /* Fix position */
+    top: 60px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+}

@@ -1,0 +1,151 @@
+/* Wishlist Component CSS */
+
+.wishlist-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    /* margin-top: 500px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .wishlist-email-notification {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .wishlist-email-notification a {
+    color: #f1f5f9;
+    text-decoration: none;
+  }
+  
+  .wishlist-sort {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wishlist-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .wishlist-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .wishlist-item-details {
+    flex: 1;
+  }
+  
+  .wishlist-item-details h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .wishlist-item-type {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .wishlist-item-price {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .wishlist-item-rewards {
+    font-size: 14px;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .wishlist-add-to-cart, .wishlist-remove {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .wishlist-add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .wishlist-add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  .wishlist-remove {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .wishlist-remove:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .wishlist-container {
+      padding: 15px;
+    }
+  
+    .wishlist-title {
+      font-size: 20px;
+    }
+  
+    .wishlist-sort {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .wishlist-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .wishlist-item-image {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .wishlist-item-details h2 {
+      font-size: 16px;
+    }
+  
+    .wishlist-item-price {
+      font-size: 14px;
+    }
+  
+    .wishlist-add-to-cart, .wishlist-remove {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+  
